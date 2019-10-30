@@ -575,6 +575,7 @@ resFile = 'your_path_to_$HOME/infer/json/once_on_once_distill/prediction.json'
 ```
 
 ## Addition of 5 classes sequentially
+Because the last model that we obtain is from task 44 (bottle), we have to run testing on test splits of whole 5 new classes - Smultiple.
 ### Fine-tuning
 * Step 1: Create data for this task. In `prepro/`, run
 ```bash
