@@ -1,0 +1,31 @@
+dataset:
+  vocab_format: 'data/vocab/{}/vocab.pkl'
+  image_dir_format: 'data/img/{}/'
+  caption_path_format: 'data/annotations/{}/'
+
+model:
+  check_point_format_seq: 'models/seq/{}/best/BEST_checkpoint_ms-coco.pth.tar'
+  model_path_format: 'models/{}/{}/{}/'
+
+optimizer:
+
+train:
+  data_name: 'ms-coco'
+  train_annotation: 'captions_train.json'
+  valid_annotation: 'captions_val.json'
+  test_annotation : 'captions_test.json'
+  TRAIN_DIR: 'train/'
+  VAL_DIR: 'val/'
+  TEST_DIR: 'test/'
+  patience: 5
+  seq_task_list: ['1', '37', '72', '70', '44']
+  
+evaluate:
+
+infer:
+  img_path: 'data/img/1/test/'
+  json_path: 'data/annotations/1/captions_test.json'
+  model: 'models/one/1/best/BEST_checkpoint_ms-coco.pth.tar'
+  vocab_path: 'data/vocab/1/vocab.pkl'
+  prediction_path: 'infer/json/1_on_1/'
+  id2class_path: 'dataset/processed/id2class.json'
