@@ -1,4 +1,15 @@
 *Code is tested on python3.5, pytorch 1.0.1 cuda10.0.130_cudnn7.4.2.2, and jupyter 1.0.0*
+# Citation
+If you find our work useful in your research, please consider citing:
+
+```
+@article{nguyen2019contcap,
+  title={ContCap: A scalable framework for continual image captioning},
+  author={Nguyen, Giang and Jun, Tae Joon and Tran, Trung and Yalew, Tolcha and Kim, Daeyoung},
+  journal={arXiv preprint arXiv:1909.08745},
+  year={2019}
+}
+```
 # Dependencies
 Packages needed to run is in `environment.yml`. Create a virtual environment to run this, (optionally rename the environment's name by tweaking the YML file). 
 
